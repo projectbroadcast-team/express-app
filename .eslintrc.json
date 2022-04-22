@@ -1,0 +1,32 @@
+{
+    "env": {
+        "node": true
+    },
+    "extends": [
+        "standard"
+    ],
+    "globals": {
+        "alert": "readonly",
+        "Alloy": "readonly",
+        "OS_ANDROID": "readonly",
+        "OS_IOS": "readonly",
+        "Ti": "readonly",
+        "Titanium": "readonly"
+    },
+    "ignorePatterns": [],
+    "parserOptions": {
+        "ecmaVersion": 12,
+        "sourceType": "script"
+    },
+    "root": true,
+    "rules": {
+        "arrow-parens": 2,
+        "curly": [2, "all"],
+        "indent": [2, 4, { "ignoreComments": true, "SwitchCase": 1 }],
+        "no-multi-spaces": [2, { "ignoreEOLComments": true }],
+        "node/no-deprecated-api": 0,
+        "prefer-template": 2,
+        "quote-props": ["error", "consistent"],
+        "import/no-webpack-loader-syntax": 0
+    }
+}
