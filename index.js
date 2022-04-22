@@ -97,36 +97,36 @@ $.load = function (_$) {
     }
 
     console.log('loading lib')
-    process('lib', require('../../lib/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../lib/**/index.js' } }))
-    process('lib', require('../../lib/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('lib', require('glob:../../lib/**/!(index).js'))
+    process('lib', require('glob:../../lib/**/index.js'))
 
     console.log('loading helpers')
-    process('helpers', require('../../helpers/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../helpers/**/index.js' } }))
-    process('helpers', require('../../helpers/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('helpers', require('glob:../../helpers/**/!(index).js'))
+    process('helpers', require('glob:../../helpers/**/index.js'))
 
     console.log('loading plugins')
-    process('plugins', require('../../plugins/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../plugins/**/index.js' } }))
-    process('plugins', require('../../plugins/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('plugins', require('glob:../../plugins/**/!(index).js'))
+    process('plugins', require('glob:../../plugins/**/index.js'))
 
     console.log('loading controllers')
-    process('controllers', require('../../controllers/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../controllers/**/index.js' } }))
-    process('controllers', require('../../controllers/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('controllers', require('glob:../../controllers/**/!(index).js'))
+    process('controllers', require('glob:../../controllers/**/index.js'))
 
     console.log('loading services')
-    process('services', require('../../services/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../services/**/index.js' } }))
-    process('services', require('../../services/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('services', require('glob:../../services/**/!(index).js'))
+    process('services', require('glob:../../services/**/index.js'))
 
     console.log('loading managers')
-    process('managers', require('../../managers/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../managers/**/index.js' } }))
-    process('managers', require('../../managers/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('managers', require('glob:../../managers/**/!(index).js'))
+    process('managers', require('glob:../../managers/**/index.js'))
 
     console.log('loading orchestrators')
-    process('orchestrators', require('../../orchestrators/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../orchestrators/**/index.js' } }))
-    process('orchestrators', require('../../orchestrators/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('orchestrators', require('glob:../../orchestrators/**/!(index).js'))
+    process('orchestrators', require('glob:../../orchestrators/**/index.js'))
 
     console.log('loading components')
-    process('components', require('../../components/**/*.js', { mode: 'list', resolve: ['path'], options: { ignore: '../../components/**/index.js' } }))
-    process('components', require('../../components/**/index.js', { mode: 'list', resolve: ['path'] }))
+    process('components', require('glob:../../components/**/!(index).js'))
+    process('components', require('glob:../../components/**/index.js'))
 
     console.log('LOADED')
 

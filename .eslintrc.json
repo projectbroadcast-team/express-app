@@ -26,6 +26,7 @@
         "no-multi-spaces": [2, { "ignoreEOLComments": true }],
         "node/no-deprecated-api": 0,
         "prefer-template": 2,
-        "quote-props": ["error", "consistent"]
+        "quote-props": ["error", "consistent"],
+        "import/no-webpack-loader-syntax": 0
     }
 }
